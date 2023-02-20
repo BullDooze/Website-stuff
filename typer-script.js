@@ -18,11 +18,11 @@ var Typer = {
     },
   
     content: function () {
-      return $('#console').html();
+      return $('#terminal').html();
     },
   
     write: function (str) {
-      $('#console').append(str);
+      $('#terminal').append(str);
       return false;
     },
   
@@ -44,8 +44,8 @@ var Typer = {
       } else if (Typer.text) {
         var cont = Typer.content();
         if (cont.substring(cont.length - 1, cont.length) == '|')
-          $('#console').html(
-            $('#console')
+          $('#terminal').html(
+            $('#terminal')
               .html()
               .substring(0, cont.length - 1),
           );
@@ -57,7 +57,7 @@ var Typer = {
         var text = Typer.text.substring(0, Typer.index);
         var rtn = new RegExp('\n', 'g');
   
-        $('#console').html(text.replace(rtn, '<br/>'));
+        $('#terminal').html(text.replace(rtn, '<br/>'));
         window.scrollBy(0, 50);
       }
   
