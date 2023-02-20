@@ -17,7 +17,7 @@ body {
   }
 
 #console {
-	font-family: courier, monospace;
+	font-family: Fira Code Medium;
 	color: #fff;
 	width:950px;
 	margin-left:auto;
@@ -31,10 +31,12 @@ a {
 	text-decoration: none;
 }
 
-#userandhost {
-	color: #0f0;
+#kalitext {
+	color: #45827d;
 }
-
+#usertext {
+        color: #2574ec;
+}
 #syntaxing {
 	color: #4d4cc6;
 }
