@@ -56,7 +56,6 @@ var Typer = {
         }
         var text = Typer.text.substring(0, Typer.index);
         var rtn = new RegExp('\n', 'g');
-  
         $('#terminal').html(text.replace(rtn, '<br/>'));
         window.scrollBy(0, 50);
       }
@@ -75,8 +74,8 @@ var Typer = {
       var cont = this.content();
   
       if (cont.substring(cont.length - 1, cont.length) == '|')
-        $('#console').html(
-          $('#console')
+        $('#terminal').html(
+          $('#terminal')
             .html()
             .substring(0, cont.length - 1),
         );
