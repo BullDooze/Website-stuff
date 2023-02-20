@@ -16,7 +16,7 @@ body {
 	background: #fff;
   }
 
-#console {
+#terminal {
 	font-family: Fira Code Medium;
 	color: #fff;
 	width:950px;
@@ -42,7 +42,7 @@ a {
 }
 
 @media (max-width : 950px) {
-    #console {
+    #terminal {
 		width: auto !important;
 		margin-top: 0px !important;
 		font-size: 15px !important;
